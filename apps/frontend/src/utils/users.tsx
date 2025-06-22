@@ -7,7 +7,7 @@ export type User = {
   email: string;
 };
 
-export const DEPLOY_URL = "http://localhost:3000";
+const DEPLOY_URL = import.meta.env.VITE_API_URL;
 
 export const usersQueryOptions = () =>
   queryOptions({
