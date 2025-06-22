@@ -21,8 +21,9 @@ coverage
 .vercel
 
 # Build Outputs
-/build/
+dist/
 /api/
+/build/
 /server/build
 /public/build# Sentry Config File
 .env.sentry-build-plugin

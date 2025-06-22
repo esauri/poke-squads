@@ -14,19 +14,20 @@
         ".vercel/**"
       ]
     },
-    "lint": {
-      "dependsOn": [
-        "^lint"
-      ]
-    },
     "check-types": {
       "dependsOn": [
         "^check-types"
       ]
     },
+    "clean": {},
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "lint": {
+      "dependsOn": [
+        "^lint"
+      ]
     }
   }
 }
