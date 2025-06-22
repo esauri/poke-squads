@@ -1,4 +1,4 @@
-export const seo = ({
+export function seo({
   title,
   description,
   keywords,
@@ -8,15 +8,13 @@ export const seo = ({
   description?: string;
   image?: string;
   keywords?: string;
-}) => {
+}) {
   const tags = [
     { title },
     { name: "description", content: description },
     { name: "keywords", content: keywords },
     { name: "twitter:title", content: title },
     { name: "twitter:description", content: description },
-    { name: "twitter:creator", content: "@tannerlinsley" },
-    { name: "twitter:site", content: "@tannerlinsley" },
     { name: "og:type", content: "website" },
     { name: "og:title", content: title },
     { name: "og:description", content: description },
@@ -30,4 +28,4 @@ export const seo = ({
   ];
 
   return tags;
-};
+}
